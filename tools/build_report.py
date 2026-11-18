@@ -184,14 +184,8 @@ def build():
 
     sub = doc.add_paragraph()
     sub.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    sub.paragraph_format.space_after = Pt(14)
+    sub.paragraph_format.space_after = Pt(18)
     set_font(sub.add_run("实验名称：基于 Vibe Coding 工作流的静态网页爬虫开发"), 12, False, "楷体")
-
-    info = doc.add_paragraph()
-    info.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    info.paragraph_format.space_after = Pt(16)
-    set_font(info.add_run("姓名：张娜丹        班级：____________        学号：____________        日期：2026-11-18"),
-             11, False, "宋体")
 
     # 一、实验目的
     add_heading(doc, "一、实验目的")
